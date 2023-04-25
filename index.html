@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>ElectroPoeira</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+      <style>
+
+         .map-container{
+            overflow:hidden;
+            padding-bottom:56.25%;
+            position:relative;
+            height:0;
+         }
+
+         .map-container iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+         }
+
+         #btn-back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+         }
+
+      </style>
+
+   </head>
+   <!-- BODY -->
+
+   <body class="main-layout">
+      
+      <!-- LOADER  -->
+
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+
+      <!-- LOADER -->
+
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="#home">Home</a>
+         <a href="#about">Sobre Nós</a>
+         <a href="#products">O que temos em Loja</a>
+         <a href="#brands">Marcas da Loja</a>
+         <a href="#location">Localização</a>
+         <a href="#contact">Contactos</a>
+      </div>
+      
+      <!-- HEADER -->
+
+      <header>
+         <!-- HEADER INNER -->
+         
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                     <!-- <div class="sea_icon d_none ">
+                        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                     </div> -->
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col logo_section">              
+                     <div>
+                        <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                     </div>                    
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                     <div class="right_bottun">
+                        <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#"/> </button> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- HEADER INNER -->
+      <!-- HEADER -->
+      
+      <!-- BANNER -->
+
+      <header class="masthead d-flex align-items-center">
+         <div class="container px-4 px-lg-5 text-center">
+             <h1 class="mb-1">ELECTROPOEIRA</h1>
+             <h3 class="mb-1"><em>Eletrodomésticos e Material Elétrico</em></h3>
+             <a class="btn btn-primary btn-xl" href="#about">Mais Informação</a>
+         </div>
+     </header>
+
+      <!-- BANNER -->
+
+      <!-- SOBRE NÓS -->
+
+      <div id="about" class="about">
+         <div class="container">
+            <div class="row ">
+               <div class="col-md-5">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="titlepage">
+                           <br><br>
+                           <h2><center>Sobre Nós</center></h2>
+                           <br><br>
+                           <p>Somos uma Loja de Eletrodomésticos, Pequenos Domésticos e Material Elétrico 
+                              com quase 50 anos de história. <br>
+                              Situados em Alijó, 
+                              na principal Avenida da vila.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <!-- <div class="about_img">
+                           <figure><img src="images/loja.jpg" alt="#"/></figure>
+                        </div> -->
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="about_right">
+                     <div class="shrink"><figure><img src="images/loja.jpg" alt="#"/></figure></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- SOBRE NÓS -->
+
+      <!-- OS NOSSOS PRODUTOS -->
+
+      <div id="products" class="we_do">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>O que temos em loja</h2>
+                     <p>Temos uma vasta variedade de produtos nas seguintes áreas: </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div id="hover_color" class="we_box">
+                     
+                     <h3>Grandes domésticos</h3>
+                     <p>Frigoríficos <br>
+                        Máquinas de Lavar Loiça <br>
+                        Máquinas de Lavar Roupa <br>
+                        Máquinas de Secar Roupa <br>
+                        Fornos <br>
+                        Fogões <br>
+                        Exaustores <br>
+                        Televisores <br>
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div id="hover_color" class="we_box">
+                     
+                     <h3>Pequenos Domésticos</h3>
+                     <p>
+                        Batedeiras,
+                        Cafeteiras<br>
+                        Máquinas de Café,
+                        Chaleiras<br>
+                        Micro-Ondas,
+                        Liquidificadores<br>
+                        Torradeiras,
+                        Secadores de Cabelo<br>
+                        Aspiradores,
+                        Ferros de Engomar<br>
+                        Rádios,
+                        Aquecedores<br>
+                        Ventiladores,
+                        umidificadores<br>
+                        (etc...)
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div id="hover_color" class="we_box">
+                     
+                     <h3>Material Elétrico</h3>
+                     <p>
+                        Fios, Cabos, <br>
+                        Disjuntores, Tomadas,  <br>
+                        Interruptores, Lâmpadas <br>
+                        e entre outras peças que permitem a transmissão da energia elétrica.
+                     </p>
+                  </div>
+               </div>
+   
+            </div>
+         </div>
+      </div>
+      <br><br>
+
+      <!-- OS NOSSOS PRODUTOS-->
+
+      <!-- MARCAS -->
+
+      <div>
+         <br><br><br>
+         <div id="brands" class="brands-section">
+            <h1><strong><center> Marcas que temos em Loja </center></strong></h1>
+            <br><br><br>
+            <div class="brand-images">
+            <div class="grow"><img src="images/brands/lg.jpg" alt="1"></div>
+            <div class="grow"><img src="images/brands/samsung.jpg" alt="2"></div>
+            <div class="grow"><img src="images/brands/beko.jpg" alt="3"></div>
+            <div class="grow"><img src="images/brands/teka.png" alt="4"></div>
+            <div class="grow"><img src="images/brands/orima.png" alt="5"></div>
+            <div class="grow"><img src="images/brands/bosch.png" alt="6"></div>
+            <div class="grow"><img src="images/brands/braun.png" alt="7"></div>
+            <div class="grow"><img src="images/brands/hoover.jpg" alt="8"></div>
+            <div class="grow"><img src="images/brands/hotpoint.png" alt="9"></div>
+            <div class="grow"><img src="images/brands/indesit.jpg" alt="10"></div>
+            <div class="grow"><img src="images/brands/krups.jpg" alt="11"></div>
+            <div class="grow"><img src="images/brands/candy.png" alt="12"></div>
+            <div class="grow"><img src="images/brands/philips.jpg" alt="13"></div>
+            <div class="grow"><img src="images/brands/rowenta.png" alt="14"></div>
+            <div class="grow"><img src="images/brands/siemens.png" alt="15"></div>      
+            <div class="grow"><img src="images/brands/efapel.jpg" alt="16"></div>
+            <div class="grow"><img src="images/brands/abb.png" alt="17"></div>
+            <div class="grow"><img src="images/brands/televes.png" alt="18"></div>
+            <div class="grow"><img src="images/brands/legrand.png" alt="19"></div>
+            </div>
+         </div>
+      </div>
+
+      <!-- MARCAS -->
+
+      <!-- LOCAÇIZAÇÃO-->
+      
+      <div id="location">
+      <br><br><br>
+      <h1><center><strong>A NOSSA LOCALIZAÇÃO</strong></center></h1>
+      <br><br>
+         <!--Google map-->
+     <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1015.1783096109534!2d-7.477811515235761!3d41.276564511933124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb6e527a09fb67cc!2sElectro%20Poeira!5e0!3m2!1spt-PT!2spt!4v1670791729986!5m2!1spt-PT!2spt"  
+       frameborder="0" style="border:0" allowfullscreen></iframe>
+     </div>
+     </div>
+
+     <!-- LOCALIZAÇÃO -->
+     
+     <!-- FOOTER -->
+
+     <div id="contact" class="contact-section">
+      <br>
+      <center>
+      <p>Avenida Dr. Francisco Sá Carneiro 78</p>
+      <p>5070-013 Alijó</p>
+      <p>Telefone: 259 959 370</p>
+      <p>Email: electro.poeira@sapo.pt</p>
+      <br><br>
+      <p>© 2023 ElectroPoeira. 
+         <br>
+         Design by André Poeira</p>
+      </center>
+      <br>
+      </div>
+
+      <!-- FOOTER -->
+
+      
+      <!-- Back to top button -->
+
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+         <i class="fas fa-arrow-up"></i>
+      </button>
+
+      <!-- Javascript files-->
+
+      <script>
+         //Get the button
+         let mybutton = document.getElementById("btn-back-to-top");
+
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function () {
+         scrollFunction();
+         };
+
+         function scrollFunction() {
+         if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+         ) {
+            mybutton.style.display = "block";
+         } else {
+            mybutton.style.display = "none";
+         }
+         }
+         // When the user clicks on the button, scroll to the top of the document
+         mybutton.addEventListener("click", backToTop);
+
+         function backToTop() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+         }
+      </script>
+
+
+      
+
+ 
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidepanel").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidepanel").style.width = "0";
+         }
+      </script>
+      <script>
+
+         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+         // Australia.
+
+         function initMap() {
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 11,
+             center: {lat: 40.645037, lng: -73.880224},
+             });
+         
+         var image = 'images/maps-and-flags.png';
+         var beachMarker = new google.maps.Marker({
+             position: {lat: 40.645037, lng: -73.880224},
+             map: map,
+             icon: image
+           });
+         }
+
+      </script>
+      <!-- google map js -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+      <!-- end google map js --> 
+   </body>
+</html>
